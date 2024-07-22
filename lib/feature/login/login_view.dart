@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:hst_project/product/constants/string_constants.dart';
 import 'package:hst_project/product/widget/appbar/custom_app_bar.dart';
 import 'package:hst_project/product/widget/button/custom_button.dart';
-import 'package:hst_project/product/widget/button/custom_switch.dart';
+import 'package:hst_project/product/widget/check/custom_switch.dart';
 import 'package:hst_project/product/widget/button/custom_text_button.dart';
 import 'package:hst_project/product/widget/texts/custom_text_field.dart';
 import 'package:kartal/kartal.dart';

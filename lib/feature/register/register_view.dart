@@ -2,8 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:hst_project/product/constants/string_constants.dart';
 import 'package:hst_project/product/enums/custom_size_constants.dart';
 import 'package:hst_project/product/widget/appbar/custom_app_bar.dart';
-import 'package:hst_project/product/widget/single_child_scroll.dart';
+import 'package:hst_project/product/widget/button/custom_button.dart';
+import 'package:hst_project/product/widget/button/custom_text_button.dart';
+import 'package:hst_project/product/widget/check/custom_check_box.dart';
+import 'package:hst_project/product/widget/texts/custom_text.dart';
 import 'package:hst_project/product/widget/texts/custom_text_field.dart';
+import 'package:hst_project/product/widget/texts/header_title.dart';
 
 class RegisterView extends StatefulWidget {
   const RegisterView({super.key});
@@ -23,7 +27,7 @@ class _RegisterViewState extends State<RegisterView> {
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
-              //TODO header title to login
+              CustomHeaderTitle(title: StringConstants.registerHeaderTitle, subtitle: StringConstants.registerHeaderSubtitle),
               Column(
                 children: [
                   Row(
@@ -63,15 +67,22 @@ class _RegisterViewState extends State<RegisterView> {
                       obscureText: true),
                   Padding(
                     padding: CustomSizeConstants.verylow.paddingHorizontal,
-                    //child: SignupCheckBox(),
+                    child: SignupCheckBox(),
                   ),
-                  //_SignupButton(),
-                  //_SignupAlreadySignin()
+                  CustomButton(title: StringConstants.register),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      CustomText.getTextBold(StringConstants.needHelp),
+                      BoldTextButton(onPressed: (){}, child: CustomText.getTextBold(StringConstants.hstAsistant ))
+                    ],
+                  )
                 ],
               )
             ],
           ),
-        ),),
+        ),
+      ),
     );
 
   }
