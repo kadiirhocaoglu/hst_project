@@ -4,7 +4,7 @@ import 'package:hst_project/feature/register/register_view.dart';
 import 'package:hst_project/feature/splash/splash_view.dart';
 import 'package:hst_project/feature/starter/start_page.dart';
 import 'package:hst_project/product/constants/color_constants.dart';
-import 'package:hst_project/product/constants/string_constants.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -13,7 +13,6 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(

@@ -14,6 +14,9 @@ enum CustomSizeConstants {
   ///30.0
   high(30),
 
+  ///45.0
+  veryhigh(45),
+
   /// AppBar Title Logo Font Size
   titleLogoSize(30),
 
