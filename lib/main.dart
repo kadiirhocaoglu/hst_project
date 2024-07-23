@@ -3,6 +3,7 @@ import 'package:hst_project/feature/login/login_view.dart';
 import 'package:hst_project/feature/register/register_view.dart';
 import 'package:hst_project/feature/splash/splash_view.dart';
 import 'package:hst_project/feature/starter/start_page.dart';
+import 'package:hst_project/feature/home/home_view.dart';
 import 'package:hst_project/product/constants/color_constants.dart';
 
 
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: ColorConstants.primary),
         useMaterial3: true,
       ),
-      home: StartPage(),
+      home: HomeView(),
     );
   }
 }
