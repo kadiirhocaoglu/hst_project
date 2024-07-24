@@ -13,4 +13,8 @@ class ColorConstants {
   static const Color zambak = Color.fromARGB(255, 255, 255, 255);
   static const Color darkness = Color.fromARGB(255, 0, 0, 0);
   static const Color white100 = Color.fromARGB(255, 238, 238, 238);
+  static const Color bgColor = Color.fromARGB(255, 68, 138, 200);
+  static const Color cardGradientColor = Color.fromARGB(255, 157, 158, 160);
+  static const Color cardGradientEndColor = Color.fromARGB(255, 222, 222, 222);
+
 }

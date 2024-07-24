@@ -1,5 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:hst_project/product/constants/color_constants.dart';
+import 'package:hst_project/product/enums/custom_size_constants.dart';
 import 'package:hst_project/product/widget/appbar/custom_app_bar.dart';
+import 'package:hst_project/product/widget/appbar/custom_home_title_view.dart';
+import 'package:hst_project/product/widget/cards/action_buttons.dart';
+import 'package:hst_project/product/widget/cards/credit_card.dart';
+import 'package:hst_project/product/widget/cards/credit_card_bottom.dart';
+import 'package:hst_project/product/widget/decorations/custom_box_decoration_items.dart';
+import 'package:hst_project/product/widget/lists/transaction_list.dart';
+import 'package:hst_project/product/widget/texts/custom_title_logo.dart';
 
 class HomeView extends StatefulWidget {
   const HomeView({super.key});
@@ -12,47 +21,45 @@ class _HomeViewState extends State<HomeView> {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
-    return Scaffold(
-      appBar: CustomAppBar.getCustomAppBar(),
-      body: Padding(
-        padding: const EdgeInsets.all(8.0),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Container(
-              height: size.height / 4,
-              width: size.width,
-              child: Card(
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                  Text("TL | TOPLAM BAKİYE", style: TextStyle(fontSize: 26, fontWeight: FontWeight.w400)),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Text("2398", style: TextStyle(fontSize: 50, fontWeight: FontWeight.w600),),
-                      Text(",", style: TextStyle(fontSize: 35, fontWeight: FontWeight.normal),),
-                      Text("99", style: TextStyle(fontSize: 38, fontWeight: FontWeight.w300),),
-                    ],
-                  )
-                ],),
+    return Container(
+      decoration: BoxDecoration(gradient: CustomBoxDecorationItems.getLinearGradient()),
+      child: Scaffold(
+        backgroundColor: Colors.transparent,
+        body: SafeArea(
+          bottom: false,
+          child: Column(
+            children: [
+              Container(
+                //height: size.height / 5,
+                child: CustomHomeTitleView(),
               ),
-            ),
-            Text("Son İşlemler", style: TextStyle(fontSize: 26, fontWeight: FontWeight.w400), textAlign: TextAlign.start),
-            Expanded(
-              child: Card( 
-                color: Colors.grey,
-                child: ListView(
-                      children: [
-                        SizedBox(child: Text("data",), height: 100, width: size.width,),
-                        SizedBox(child: Text("data"), height: 100, width: size.width,),
-                        SizedBox(child: Text("data"), height: 100, width: size.width,),
-                    ],),
-              )
-            )
-          ],
+              Padding(
+                padding: EdgeInsets.only(top: CustomSizeConstants.medium.value),
+                child: CreditCard(),
+              ),
+              Expanded(
+                child: Container(
+                 color: Colors.white,
+                child: Column(
+                  children: [
+                    CreditCardBottom(),
+                    Expanded(
+                      child: Column(
+                        children: [
+                          SizedBox(height: 30,), 
+                          ActionButtons(),
+                          SizedBox(height: 20,), 
+                          TransactionList()
+                          ],),
+                    )
+                  ],
+                )),
+              ),
+            ],
+          ),
         ),
       ),
     );
   }
 }
+

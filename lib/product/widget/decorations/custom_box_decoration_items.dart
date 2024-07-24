@@ -13,6 +13,23 @@ class CustomBoxDecorationItems {
     );
   }
 
+  static LinearGradient getCardGradient() {
+    return const LinearGradient(
+      colors: [
+        ColorConstants.cardGradientColor,
+        ColorConstants.cardGradientEndColor,
+        ColorConstants.cardGradientColor,
+      ],
+    );
+  }
+
+  static BoxDecoration getActionButtonsDecoration() {
+    return BoxDecoration(
+        color: ColorConstants.white100,
+        borderRadius:
+            BorderRadius.all(CustomSizeConstants.medium.radiusCircular));
+  }
+
   static InputDecoration getInputDecoration() {
     return InputDecoration(
       border: OutlineInputBorder(),

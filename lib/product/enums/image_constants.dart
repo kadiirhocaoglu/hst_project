@@ -10,3 +10,13 @@ enum IconConstants {
   String get toPng => 'assets/icon/$value.png';
 
 }
+enum ImageConstants {
+    card_earth('earth_dots');
+
+
+  
+  final String value; 
+  const ImageConstants(this.value);
+
+  String get toPng => 'assets/image/$value.png';
+}

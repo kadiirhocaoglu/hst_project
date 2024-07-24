@@ -28,6 +28,22 @@ class StringConstants {
   static const String loginHeaderSubtitle = '';
   static const String registerHeaderTitle = 'Aramıza katılmana çok az kaldı';
   static const String registerHeaderSubtitle = 'Kayıt formunu doldurduktan sonra sana ulaşıp hesabını onaylayacağız.';
+
+  ///Home View String Constants
+  static const String dailyGero = 'Günlük Ciro';
+  static const String fakeBalance = '563';
+  static const String fakeTotalBalance = '123563';
+  static const String fakeBalancedot = ',43';
+  static const String totalBalance = 'Bakiye';
+  static const String getPaid = 'Satış Yap';
+  static const String today = 'Bugün';
+  static const String navHomeViewTitle = 'Anasayfa';
+  static const String navGetPairTitle = 'Satış Yap';
+  static const String navTransaction = 'İşlemler';
+  static const String navPullMoney = 'Ödeme Al';
+  static const String navSettings = 'Ayarlar';
+  static const String typeMoney = 'TL';
+
 }
 
 extension StringConstantsExt on StringConstants{

@@ -164,6 +164,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "intl",
+      "rootUri": "file:///Users/kadirhocaoglu/.pub-cache/hosted/pub.dev/intl-0.19.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
       "name": "kartal",
       "rootUri": "file:///Users/kadirhocaoglu/.pub-cache/hosted/pub.dev/kartal-4.0.4",
       "packageUri": "lib/",
@@ -482,7 +488,7 @@
       "languageVersion": "3.4"
     }
   ],
-  "generated": "2024-07-09T09:22:20.225234Z",
+  "generated": "2024-07-24T12:44:39.338249Z",
   "generator": "pub",
   "generatorVersion": "3.4.3",
   "flutterRoot": "file:///Users/kadirhocaoglu/development/flutter",
