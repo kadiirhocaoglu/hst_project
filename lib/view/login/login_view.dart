@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:hst_project/product/constants/string_constants.dart';
+import 'package:hst_project/product/enums/custom_size_constants.dart';
 import 'package:hst_project/product/widget/appbar/custom_app_bar.dart';
 import 'package:hst_project/product/widget/button/custom_button.dart';
 import 'package:hst_project/product/widget/check/custom_switch.dart';
 import 'package:hst_project/product/widget/button/custom_text_button.dart';
 import 'package:hst_project/product/widget/texts/custom_text_field.dart';
-import 'package:kartal/kartal.dart';
 
 class LoginView extends StatefulWidget {
   const LoginView({Key? key}) : super(key: key);
@@ -27,7 +27,7 @@ void toggleSwitch(bool value){
     return Scaffold(
       appBar: CustomAppBar.getCustomAppBar(),
       body: Padding(
-        padding: context.padding.low,
+        padding: CustomSizeConstants.low.padding,
         child: Column(children: [
           CustomTextField(
             title: StringConstants.phoneNumber,

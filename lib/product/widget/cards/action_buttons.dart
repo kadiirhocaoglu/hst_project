@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hst_project/feature/login/login_view.dart';
+import 'package:hst_project/view/login/login_view.dart';
 import 'package:hst_project/product/constants/color_constants.dart';
 import 'package:hst_project/product/enums/custom_size_constants.dart';
 import 'package:hst_project/product/widget/decorations/custom_box_decoration_items.dart';

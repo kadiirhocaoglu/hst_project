@@ -10,14 +10,14 @@ import 'package:hst_project/product/widget/decorations/custom_box_decoration_ite
 import 'package:hst_project/product/widget/texts/custom_text_field.dart';
 import 'package:hst_project/product/widget/texts/custom_title_logo.dart';
 
-class StartView extends StatefulWidget {
-  const StartView({super.key});
+class AuthMainView extends StatefulWidget {
+  const AuthMainView({super.key});
 
   @override
-  State<StartView> createState() => _StartViewState();
+  State<AuthMainView> createState() => _AuthMainViewState();
 }
 
-class _StartViewState extends State<StartView> {
+class _AuthMainViewState extends State<AuthMainView> {
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
