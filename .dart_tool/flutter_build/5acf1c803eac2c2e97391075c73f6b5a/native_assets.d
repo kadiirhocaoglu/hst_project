@@ -1,0 +1,1 @@
+ /Users/kadirhocaoglu/Desktop/hst_project/.dart_tool/flutter_build/5acf1c803eac2c2e97391075c73f6b5a/native_assets.yaml: 
