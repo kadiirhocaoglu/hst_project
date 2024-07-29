@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:get/route_manager.dart';
 import 'package:get/get.dart';
+import 'package:hst_project/res/routes/app_routes.dart';
+import 'package:hst_project/res/routes/routes_constants.dart';
 import 'package:hst_project/view/home/home_view.dart';
 import 'package:hst_project/view/login/login_view.dart';
+import 'package:hst_project/view/splash/splash_view.dart';
+import 'package:hst_project/view_models/bindings/login_binding.dart';
 
 
 
@@ -25,9 +29,10 @@ class HstApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      //initialRoute: RoutesConstants.dashboardView,
-      //getPages: AppRoutes.appRoutes(),
-      home: LoginView(),
+      initialRoute: RoutesConstants.dashboardView,
+      getPages: AppRoutes.appRoutes(),
+      home: SplashView(),
+      //initialBinding: LoginBinding(),
     );
   }
 }

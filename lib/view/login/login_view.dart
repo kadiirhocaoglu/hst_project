@@ -16,8 +16,6 @@ import 'package:hst_project/view_models/controllers/login/login_view_model.dart'
 
 class LoginView extends GetView<LoginController> {
 
-  final controller = Get.put(LoginController());
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
