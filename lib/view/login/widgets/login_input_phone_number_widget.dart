@@ -36,7 +36,7 @@ class LoginInputPhoneNumberWidget extends GetView<LoginController> {
             prefix: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 2.0),
               child: Text(
-                '+90',
+                StringConstants.placePhoneCode,
                 style: TextStyle(fontSize: 16),
               ),
             ),

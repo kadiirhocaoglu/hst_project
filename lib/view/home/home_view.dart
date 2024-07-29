@@ -12,18 +12,12 @@ import 'package:hst_project/product/widget/lists/transaction_list.dart';
 import 'package:hst_project/product/widget/texts/custom_title_logo.dart';
 import 'package:hst_project/view_models/controllers/home/home_view_model.dart';
 
-class HomeView extends StatefulWidget {
-  const HomeView({super.key});
 
-  @override
-  State<HomeView> createState() => _HomeViewState();
-}
 
-class _HomeViewState extends State<HomeView> {
+class HomeView extends GetView<HomeController> {
   @override
   Widget build(BuildContext context) {
       final HomeController controller = Get.put(HomeController());
-    Size size = MediaQuery.of(context).size;
     return Container(
       decoration: BoxDecoration(gradient: CustomBoxDecorationItems.getLinearGradient()),
       child: Scaffold(

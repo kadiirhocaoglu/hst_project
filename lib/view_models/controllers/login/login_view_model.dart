@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:hst_project/res/routes/app_routes.dart';
 import 'package:hst_project/res/routes/routes_constants.dart';
+import 'package:hst_project/view/home/home_view.dart';
 
 
 class LoginController extends GetxController {
@@ -21,11 +23,19 @@ class LoginController extends GetxController {
   void loginButtonOnPressed() {
     if (loginFormKey.currentState!.validate()) {
       // başarılı login simülasyonu
+      //TODO: print(Get.size.width);
       Get.snackbar('HST POS', 'Giriş başarılı, hoşgeldin.');
-      passwordController.value.clear();
+      Get.offNamed(RoutesConstants.homeView);
     } else {
       Get.snackbar('HST POS', 'Lütfen bilgileri doğru girdiğinizden emin olun.');
     }
+  }
+
+  void forgettenPasswordOnPressed(){
+    //TODO: şifremi unttum apisini entegre et
+  }
+  void registerNavigatorOnPressed(){
+    Get.toNamed(RoutesConstants.registerView);
   }
 
   void onFormChange(){
@@ -55,7 +65,5 @@ class LoginController extends GetxController {
   }
   
 
-  void forgettenPasswordOnPressed(){
-    //TODO: şifremi unttum apisini entegre et
-  }
+  
 }

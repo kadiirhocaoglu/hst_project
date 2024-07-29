@@ -14,6 +14,7 @@ class RoutesConstants {
   static const String assistantView = '/assistant_view';
   static const String settingsView = '/settings_view';
   static const String actionMenuView = '/action_menu_view';
+  static const String notificaitonsView =  '/notifications_view';
   //Payment
   static const String getMoneyView = '/get_money_view';
   static const String salesView = '/sales_view';

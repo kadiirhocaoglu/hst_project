@@ -8,7 +8,10 @@ class CustomBoxDecorationItems {
     return const LinearGradient(
       colors: [
         ColorConstants.gradientStartColor,
-        ColorConstants.gradientEndColor
+        ColorConstants.logoDarkGreen,
+        //ColorConstants.logoLightGreen,
+       // ColorConstants.logoDarkBlue,
+      //  ColorConstants.logoLightBlue,
       ],
     );
   }
@@ -28,6 +31,12 @@ class CustomBoxDecorationItems {
         color: ColorConstants.white100,
         borderRadius:
             BorderRadius.all(CustomSizeConstants.medium.radiusCircular));
+  }
+
+  static BoxDecoration getBGGradient(){
+    return BoxDecoration(
+      gradient: CustomBoxDecorationItems.getLinearGradient()
+    );
   }
 
   static InputDecoration getInputDecoration() {

@@ -14,7 +14,7 @@ class CreditCardBottom extends StatelessWidget {
           borderRadius: BorderRadius.only(
               bottomLeft: Radius.circular(20),
               bottomRight: Radius.circular(20)),
-          gradient: CustomBoxDecorationItems.getCardGradient()),
+          gradient: CustomBoxDecorationItems.getLinearGradient()),
       child: ClipRRect(
         borderRadius: BorderRadius.only(
             bottomLeft: Radius.circular(20), bottomRight: Radius.circular(20)),
@@ -34,7 +34,7 @@ class CreditCardBottom extends StatelessWidget {
                       const Text(
                         StringConstants.totalBalance,
                         style: TextStyle(
-                          color: Colors.black54,
+                          color: Colors.white,
                           fontSize: 16,
                           fontWeight: FontWeight.normal,
                           height: 1.0,
@@ -44,7 +44,7 @@ class CreditCardBottom extends StatelessWidget {
                           children: [
                             Text(StringConstants.fakeTotalBalance,
                               style: TextStyle(
-                                color: Colors.black,
+                                color: Colors.white,
                                 fontSize: 26,
                                 fontWeight: FontWeight.bold,
                                 height: 1.0
@@ -52,14 +52,14 @@ class CreditCardBottom extends StatelessWidget {
                             ),
                             Text(StringConstants.fakeBalancedot,
                               style: TextStyle(
-                                color: Colors.black,
+                                color: Colors.white,
                                 fontSize: 16,
                                 fontWeight: FontWeight.bold
                               ),
                             ),
                             Text(StringConstants.typeMoney,
                               style: TextStyle(
-                                color: Colors.black,
+                                color: Colors.white,
                                 fontSize: 16,
                                 fontWeight: FontWeight.bold
                               ),

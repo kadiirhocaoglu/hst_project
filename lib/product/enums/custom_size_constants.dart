@@ -7,6 +7,9 @@ enum CustomSizeConstants {
 
   ///10.0
   low(10),
+  
+  //15.0
+  middleLow(15),
 
   ///20.0
   medium(20),
@@ -21,7 +24,7 @@ enum CustomSizeConstants {
   titleLogoSize(30),
 
   ///Normal Button Height [value]
-  normalButtonHeight(56);
+  normalButtonHeight(56.0);
 
   final double value;
   const CustomSizeConstants(this.value);

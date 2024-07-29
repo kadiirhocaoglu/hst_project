@@ -1,7 +1,8 @@
 enum IconConstants {
 
   phone_call('ic_phone'),
-  hst_logo('ic_logo') 
+  hst_logo('ic_logo'),
+  hst_assistant('ic_assistant')
   ;
   
   final String value; 

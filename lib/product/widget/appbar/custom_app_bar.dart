@@ -1,5 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:get/route_manager.dart';
+import 'package:hst_project/product/constants/string_constants.dart';
+import 'package:hst_project/product/enums/image_constants.dart';
+import 'package:hst_project/res/routes/app_routes.dart';
+import 'package:hst_project/res/routes/routes_constants.dart';
+import 'package:hst_project/utils/extensions/double_extension.dart';
 import '../../constants/color_constants.dart';
 import '../../enums/custom_size_constants.dart';
 import '../decorations/custom_box_decoration_items.dart';
@@ -9,11 +15,10 @@ class CustomAppBar {
   CustomAppBar._();
   static AppBar getCustomAppBar() {
     return AppBar(
+      foregroundColor: ColorConstants.zambak,
+      toolbarHeight: 13.0.hp,
+      leading: BackButton(color: ColorConstants.bgColor,),
       systemOverlayStyle: SystemUiOverlayStyle.light,
-      toolbarHeight: 100,
-      leading: BackButton(
-        color: ColorConstants.zambak
-      ),
       automaticallyImplyLeading: false,
       shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.only(
@@ -28,7 +33,14 @@ class CustomAppBar {
         ),
       ),
       title: CustomTitleLogo(),
-      actions: [IconButton(onPressed: () {}, icon: Icon(Icons.notifications, color: ColorConstants.zambak,))],
+      actions: [
+        IconButton(
+          onPressed: () {
+            Get.toNamed(RoutesConstants.assistantView);
+          },
+           icon: Icon(Icons.support_agent_sharp)
+          ),
+      ]
     );
   }
 }

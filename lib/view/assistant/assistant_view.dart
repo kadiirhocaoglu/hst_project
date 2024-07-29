@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hst_project/product/constants/color_constants.dart';
+import 'package:hst_project/product/constants/string_constants.dart';
 import 'package:hst_project/product/widget/appbar/custom_home_title_view.dart';
 import 'package:hst_project/product/widget/texts/custom_title_logo.dart';
 
@@ -27,11 +28,11 @@ class _AssistantViewState extends State<AssistantView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: ColorConstants.darkness,
+      backgroundColor: ColorConstants.bgColor,
       body: SafeArea(
         child: Column(
           children: [
-            CustomHomeTitleView(),
+            Text(StringConstants.hstAsistant, style: Theme.of(context).textTheme.headlineLarge,),
             Expanded(
               child: ListView.builder(
                 reverse: true,

@@ -14,7 +14,7 @@ class StringConstants {
   static const String email = 'Email';
   static const String password = 'Şifre';
   static const String phoneNumber = 'Telefon Numarası';
-  static const String forgetPassword = "Şifremi unuttum";
+  static const String forgetPassword = "Şifrenizi mi unuttunuz?";
   static const String rememberMe = "Beni hatırla";
   static const String website = 'Website Adresi';
   static const String signupTermsText = 'Üyelik Sözleşmesini ve Kullanım Şartlarını kabul ediyorum.';
@@ -24,10 +24,12 @@ class StringConstants {
   static const String hstAsistant = 'HST Asistan';
 
   ///Header Title login and register
-  static const String loginHeaderTitle = 'Tekrardan Hoşgeldin';
-  static const String loginHeaderSubtitle = '';
+  static const String loginHeaderTitle = 'Hoşgeldin';
+  static const String loginHeaderSubtitle = 'Unutma! Her türlü sorunda, HST Asistan yanında!';
   static const String registerHeaderTitle = 'Aramıza katılmana çok az kaldı';
   static const String registerHeaderSubtitle = 'Kayıt formunu doldurduktan sonra sana ulaşıp hesabını onaylayacağız.';
+  static const String or = 'veya';
+  static const String placePhoneCode = '+90';
 
   ///Home View String Constants
   static const String dailyGero = 'Günlük Ciro';

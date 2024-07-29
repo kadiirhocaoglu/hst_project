@@ -1,85 +1,47 @@
 import 'package:flutter/material.dart';
-import 'package:hst_project/product/constants/string_constants.dart';
+import 'package:get/get.dart';
+import 'package:get/get_state_manager/src/simple/get_view.dart';
 import 'package:hst_project/product/enums/custom_size_constants.dart';
 import 'package:hst_project/product/widget/appbar/custom_app_bar.dart';
-import 'package:hst_project/product/widget/button/custom_button.dart';
-import 'package:hst_project/product/widget/button/custom_text_button.dart';
-import 'package:hst_project/product/widget/check/custom_check_box.dart';
-import 'package:hst_project/product/widget/texts/custom_text.dart';
-import 'package:hst_project/product/widget/texts/custom_text_field.dart';
-import 'package:hst_project/product/widget/texts/header_title.dart';
+import 'package:hst_project/product/widget/button/need_help_assistant.dart';
+import 'package:hst_project/view/register/widgets/register_aggre_terms_button.dart';
+import 'package:hst_project/view/register/widgets/register_button.dart';
+import 'package:hst_project/view/register/widgets/register_header_title.dart';
+import 'package:hst_project/view/register/widgets/register_input_email_widget.dart';
+import 'package:hst_project/view/register/widgets/register_input_name_surname_widget.dart';
+import 'package:hst_project/view/register/widgets/register_input_password_widget.dart';
+import 'package:hst_project/view/register/widgets/register_input_phone_number_widget.dart';
+import 'package:hst_project/view/register/widgets/register_input_website_widget.dart';
+import 'package:hst_project/view_models/controllers/register/register_view_model.dart';
 
-class RegisterView extends StatefulWidget {
-  const RegisterView({super.key});
 
-  @override
-  State<RegisterView> createState() => _RegisterViewState();
-}
-
-class _RegisterViewState extends State<RegisterView> {
+class RegisterView extends GetView<RegisterController> {
+  final controller = Get.put(RegisterController());
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: CustomAppBar.getCustomAppBar(),
-      body: SingleChildScrollView(child: Padding(
-          padding: CustomSizeConstants.medium.paddingHorizontal,
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            mainAxisAlignment: MainAxisAlignment.start,
-            children: [
-              CustomHeaderTitle(title: StringConstants.registerHeaderTitle, subtitle: StringConstants.registerHeaderSubtitle),
-              Column(
-                children: [
-                  Row(
-                    children: [
-                      Expanded(
-                        child: Padding(
-                          padding: EdgeInsets.only(
-                              right: CustomSizeConstants.verylow.value),
-                          child: CustomTextField(
-                              title: StringConstants.name,
-                              controller: TextEditingController()),
-                        ),
-                      ),
-                      Expanded(
-                        child: Padding(
-                          padding: EdgeInsets.only(
-                              left: CustomSizeConstants.verylow.value),
-                          child: CustomTextField(
-                              title: StringConstants.surname,
-                              controller: TextEditingController()),
-                        ),
-                      ),
-                    ],
-                  ),
-                  CustomTextField(
-                      title: StringConstants.email,
-                      controller: TextEditingController()),
-                  CustomTextField(
-                      title: StringConstants.phoneNumber,
-                      controller: TextEditingController()),
-                  CustomTextField(
-                      title: StringConstants.website,
-                      controller: TextEditingController()),
-                  CustomTextField(
-                      title: StringConstants.password,
-                      controller: TextEditingController(),
-                      obscureText: true),
-                  Padding(
-                    padding: CustomSizeConstants.verylow.paddingHorizontal,
-                    child: SignupCheckBox(),
-                  ),
-                  CustomButton(title: StringConstants.register),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      CustomText.getTextBold(StringConstants.needHelp),
-                      BoldTextButton(onPressed: (){}, child: CustomText.getTextBold(StringConstants.hstAsistant ))
-                    ],
-                  )
-                ],
-              )
-            ],
+      body: Padding(
+        padding: CustomSizeConstants.middleLow.padding,
+        child: SingleChildScrollView(
+          child: Form(
+            key: controller.registerFormKey,
+            onChanged: controller.onFormChange,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: [
+                RegisterHeaderTitle(),
+                RegisterInputNameSurnameWidget(),
+                RegisterInputEmailWidget(),
+                RegisterInputPhoneNumberWidget(),
+                RegisterInputWebsiteWidget(),
+                RegisterInputPasswordWidget(),
+                RegisterAggreTermsButton(),
+                RegisterButton(),
+                NeedHelpAssistant()
+                
+              ],
+            ),
           ),
         ),
       ),

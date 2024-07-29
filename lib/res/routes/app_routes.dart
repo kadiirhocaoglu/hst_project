@@ -1,9 +1,11 @@
 import 'package:get/get.dart';
 import 'package:hst_project/view/action_menu/action_menu_view.dart';
+import 'package:hst_project/view/assistant/assistant_view.dart';
 import 'package:hst_project/view/auth_main/auth_main_view.dart';
 import 'package:hst_project/view/get_money/get_money_view.dart';
 import 'package:hst_project/view/home/home_view.dart';
 import 'package:hst_project/view/login/login_view.dart';
+import 'package:hst_project/view/notifications/notificaitons_view.dart';
 import 'package:hst_project/view/payment/pay_card/pay_card_view.dart';
 import 'package:hst_project/view/payment/pay_contactless/pay_contactless_view.dart';
 import 'package:hst_project/view/payment/pay_link/pay_link_view.dart';
@@ -24,78 +26,90 @@ class AppRoutes {
       name: RoutesConstants.splashScreen,
       page: () => SplashView(),
       transitionDuration: Duration(milliseconds: 250),
-      transition: Transition.leftToRightWithFade,
+      transition: Transition.rightToLeftWithFade,
     ),
     GetPage(
       name: RoutesConstants.authMainView,
       page: () => AuthMainView(),
       transitionDuration: Duration(milliseconds: 250),
-      transition: Transition.leftToRightWithFade,
+      transition: Transition.rightToLeftWithFade,
     ),
     GetPage(
       name: RoutesConstants.loginView,
       page: () => LoginView(),
       transitionDuration: Duration(milliseconds: 250),
-      transition: Transition.leftToRightWithFade,
+      transition: Transition.rightToLeftWithFade,
     ),
     GetPage(
       name: RoutesConstants.registerView,
       page: () => RegisterView(),
       transitionDuration: Duration(milliseconds: 250),
-      transition: Transition.leftToRightWithFade,
+      transition: Transition.rightToLeftWithFade,
     ),
     GetPage(
       name: RoutesConstants.homeView,
       page: () => HomeView(),
       binding: HomeBinding(),
       transitionDuration: Duration(milliseconds: 250),
-      transition: Transition.leftToRightWithFade,
+      transition: Transition.rightToLeftWithFade,
     ),
     GetPage(
       name: RoutesConstants.settingsView,
       page: () => SettingsView(),
       binding: SettingsBinding(),
       transitionDuration: Duration(milliseconds: 250),
-      transition: Transition.leftToRightWithFade,
+      transition: Transition.rightToLeftWithFade,
     ),
     GetPage(
       name: RoutesConstants.actionMenuView,
       page: () => ActionMenuView(),
       binding: ActionMenuBinding(),
       transitionDuration: Duration(milliseconds: 250),
-      transition: Transition.leftToRightWithFade,
+      transition: Transition.rightToLeftWithFade,
     ),
     GetPage(
       name: RoutesConstants.getMoneyView,
       page: () => GetMoneyView(),
       binding: GetMoneyBinding(),
       transitionDuration: Duration(milliseconds: 250),
-      transition: Transition.leftToRightWithFade,
+      transition: Transition.rightToLeftWithFade,
     ),
     GetPage(
       name: RoutesConstants.salesView,
       page: () => SalesView(),
       binding: SalesBinding(),
       transitionDuration: Duration(milliseconds: 250),
-      transition: Transition.leftToRightWithFade,
+      transition: Transition.rightToLeftWithFade,
     ),
     GetPage(
       name: RoutesConstants.payCardView,
       page: () => PayCardView(),
       transitionDuration: Duration(milliseconds: 250),
-      transition: Transition.leftToRightWithFade,
+      transition: Transition.rightToLeftWithFade,
     ),
     GetPage(
       name: RoutesConstants.payLinkView,
       page: () => PayLinkView(),
       transitionDuration: Duration(milliseconds: 250),
-      transition: Transition.leftToRightWithFade,
+      transition: Transition.rightToLeftWithFade,
     ),
     GetPage(
       name: RoutesConstants.payContactlessView,
       page: () => PayContactlessView(),
       transitionDuration: Duration(milliseconds: 250),
-      transition: Transition.leftToRightWithFade,
+      transition: Transition.rightToLeftWithFade,
+    ),
+    GetPage(
+      name: RoutesConstants.notificaitonsView,
+      page: () => NotificaitonsView(),
+      transitionDuration: Duration(milliseconds: 250),
+      transition: Transition.rightToLeftWithFade,
+    ),
+    GetPage(
+      name: RoutesConstants.assistantView,
+      page: () => AssistantView(),
+      transitionDuration: Duration(milliseconds: 250),
+      transition: Transition.rightToLeftWithFade,
     ),
   ];
 }
