@@ -24,7 +24,25 @@ enum CustomSizeConstants {
   titleLogoSize(30),
 
   ///Normal Button Height [value]
-  normalButtonHeight(56.0);
+  normalButtonHeight(56.0),
+
+  ///HomeCard Upper height [value]
+  homeCardUpperHeight(15.0),
+  ///HomeCard  bottom height [value]
+  homeCardBottomHeight(7.0),
+  ///HomeCard Upper width [value]
+  homeCardWidth(85.0),
+  
+  homeCardLogoHeight(9.0),
+
+  ///HomeCard BalanceFontSize [value]
+  homeCardBalancesFontSize(20.0),
+
+  ///HomeCardSmallBalanceFontSize [value]
+  homeCardSmallBalancesFontSize(12.0),
+
+  ///HomeCard BalancesTitlesFontSize [value]
+  homeCardBalancesTitlesFontSize(12.0);
 
   final double value;
   const CustomSizeConstants(this.value);

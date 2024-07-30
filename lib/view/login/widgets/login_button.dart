@@ -22,7 +22,7 @@ class LoginButton extends GetView<LoginController> {
         style: ElevatedButton.styleFrom(
             fixedSize: Size(double.maxFinite, CustomSizeConstants.normalButtonHeight.value ),
             shape:
-                RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+                RoundedRectangleBorder(borderRadius: BorderRadius.all(CustomSizeConstants.low.radiusCircular)),
             backgroundColor: ColorConstants.logoDarkGreen,
             foregroundColor: Colors.white),
       ),

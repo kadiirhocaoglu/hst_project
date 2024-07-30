@@ -2,7 +2,10 @@ enum IconConstants {
 
   phone_call('ic_phone'),
   hst_logo('ic_logo'),
-  hst_assistant('ic_assistant')
+  hst_assistant('ic_assistant'),
+  card_chip('ic_credit_card_chip'),
+  wifi('ic_wifi'),
+  cretid_card('ic_credit_card')
   ;
   
   final String value; 
@@ -12,7 +15,8 @@ enum IconConstants {
 
 }
 enum ImageConstants {
-    card_earth('earth_dots');
+    card_earth('earth_dots'),
+    card_bg('img_bg_card_dots');
 
 
   

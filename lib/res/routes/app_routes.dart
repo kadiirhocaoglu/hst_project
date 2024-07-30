@@ -21,6 +21,7 @@ import 'package:hst_project/view_models/bindings/sales_binding.dart';
 import 'package:hst_project/view_models/bindings/settings_binding.dart';
 
 class AppRoutes {
+  
   static List<GetPage> appRoutes() => [
     GetPage(
       name: RoutesConstants.splashScreen,

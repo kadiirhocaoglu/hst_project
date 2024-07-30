@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hst_project/product/constants/color_constants.dart';
 import 'package:hst_project/product/enums/custom_size_constants.dart';
+import 'package:hst_project/product/enums/image_constants.dart';
 
 class CustomBoxDecorationItems {
   CustomBoxDecorationItems._();
@@ -38,6 +39,50 @@ class CustomBoxDecorationItems {
       gradient: CustomBoxDecorationItems.getLinearGradient()
     );
   }
+  static BoxDecoration getCardUpperDecoration(){ 
+    return BoxDecoration(
+      image: DecorationImage(
+        image: AssetImage(ImageConstants.card_bg.toPng),         alignment: Alignment.topCenter, 
+        fit: BoxFit.fitWidth, 
+       colorFilter: ColorFilter.mode(
+          Colors.white.withOpacity(0.4),
+          BlendMode.dstIn, 
+        ),
+      ),
+      borderRadius: getCardUpperRadius(),
+      gradient: CustomBoxDecorationItems.getCardGradient(),
+      border: Border(
+        right: BorderSide(), 
+        left: BorderSide(), 
+        top: BorderSide()
+        )  
+    );
+  }
+    static BoxDecoration getCardBottomDecoration(){ 
+    return BoxDecoration(
+      borderRadius: getCardBottomRadius(),
+      gradient: CustomBoxDecorationItems.getCardGradient(),
+      border: Border(
+        right: BorderSide(), 
+        left: BorderSide(), 
+        bottom: BorderSide()
+        )  
+    );
+  }
+
+static BorderRadius getCardUpperRadius(){ 
+    return BorderRadius.only(
+        topLeft: CustomSizeConstants.medium.radiusCircular, 
+        topRight: CustomSizeConstants.medium.radiusCircular);
+
+  }
+  static BorderRadius getCardBottomRadius(){ 
+    return BorderRadius.only(
+        bottomLeft: CustomSizeConstants.medium.radiusCircular, 
+        bottomRight: CustomSizeConstants.medium.radiusCircular);
+  
+  
+  }
 
   static InputDecoration getInputDecoration() {
     return InputDecoration(
@@ -55,4 +100,11 @@ class CustomBoxDecorationItems {
       fontSize: CustomSizeConstants.titleLogoSize.value,
     );
   }
+    static TextStyle getNormalButtonTextStyle(
+      {FontWeight fontWeight = FontWeight.w100}) {
+    return TextStyle(
+              fontSize: CustomSizeConstants.medium.value,
+              fontWeight: FontWeight.w600);
+  }
+  
 }

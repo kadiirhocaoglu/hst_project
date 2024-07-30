@@ -23,10 +23,11 @@ class StringConstants {
   static const String needHelp = 'Yardıma mı ihtiyacın var?';
   static const String hstAsistant = 'HST Asistan';
 
+
   ///Header Title login and register
   static const String loginHeaderTitle = 'Hoşgeldin';
   static const String loginHeaderSubtitle = 'Unutma! Her türlü sorunda, HST Asistan yanında!';
-  static const String registerHeaderTitle = 'Aramıza katılmana çok az kaldı';
+  static const String registerHeaderTitle = 'Aramıza katılmana çok az kaldı!';
   static const String registerHeaderSubtitle = 'Kayıt formunu doldurduktan sonra sana ulaşıp hesabını onaylayacağız.';
   static const String or = 'veya';
   static const String placePhoneCode = '+90';
@@ -45,6 +46,7 @@ class StringConstants {
   static const String navPullMoney = 'Ödeme Al';
   static const String navSettings = 'Ayarlar';
   static const String typeMoney = 'TL';
+  static const String payment = 'Satış Yap';
 
 }
 

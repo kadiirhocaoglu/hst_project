@@ -13,15 +13,15 @@ final class CustomHeaderTitle extends StatelessWidget {
 
     @override
     Widget build(BuildContext context) {
-      return Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Text(_title, style: Theme.of(context).textTheme.titleMedium,),
-          Padding(
-            padding: EdgeInsets.only(top: CustomSizeConstants.verylow.value),
-            child: Text(_subtitle, style: Theme.of(context).textTheme.titleSmall),
-          )
-        ],
+      return Container(
+        padding: EdgeInsets.only(bottom: CustomSizeConstants.low.value),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(_title, style: Theme.of(context).textTheme.titleMedium?.copyWith(fontWeight: FontWeight.w800)),
+            Text(_subtitle, style: Theme.of(context).textTheme.titleSmall?.copyWith(fontWeight: FontWeight.w400))
+          ],
+        ),
       );
     }
   }

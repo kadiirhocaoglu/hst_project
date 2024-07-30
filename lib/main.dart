@@ -11,6 +11,7 @@ import 'package:hst_project/view/login/login_view.dart';
 import 'package:hst_project/view/register/register_view.dart';
 import 'package:hst_project/view/splash/splash_view.dart';
 import 'package:hst_project/view_models/bindings/auth_main_binding.dart';
+import 'package:hst_project/view_models/bindings/home_binding.dart';
 import 'package:hst_project/view_models/bindings/login_binding.dart';
 import 'package:hst_project/view_models/bindings/register_binding.dart';
 
@@ -34,10 +35,10 @@ class HstApp extends StatelessWidget {
       //fallbackLocale: const Locale('en' ,'US'),
       theme: ThemeData(colorScheme: ColorScheme(brightness: Brightness.light, primary: ColorConstants.darkness, onPrimary: ColorConstants.zambak, secondary: ColorConstants.secondary, onSecondary: ColorConstants.cardGradientColor, error: ColorConstants.error, onError: ColorConstants.gradientEndColor
       , surface: ColorConstants.bgColor, onSurface: ColorConstants.onSurface)),
-      initialRoute: RoutesConstants.authMainView,
+      initialRoute: RoutesConstants.homeView,
       getPages: AppRoutes.appRoutes(),
-      home: AuthMainView(),
-      initialBinding: AuthMainBinding(),
+      home: HomeView(),
+      initialBinding: HomeBinding(),
     );
   }
 }
