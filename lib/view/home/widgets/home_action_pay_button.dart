@@ -18,8 +18,7 @@ class HomeActionPayButton extends GetView<HomeController> {
     return Container(
       padding: CustomSizeConstants.low.paddingHorizontal,
       child: TextButton(
-        onPressed: () {
-        },
+        onPressed: controller.actionPayButtonOnTapped,
         child: Row(
           children: [
             Container(

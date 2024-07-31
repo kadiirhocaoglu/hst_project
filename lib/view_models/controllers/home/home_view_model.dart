@@ -14,9 +14,10 @@ import 'package:hst_project/view_models/bindings/sales_binding.dart';
 import 'package:hst_project/view_models/bindings/settings_binding.dart';
 
 class HomeController extends GetxController {
-  static HomeController get to => Get.find();
 
-
+void actionPayButtonOnTapped(){
+  Get.toNamed(RoutesConstants.salesView);
+}
 
 final List<PayTransaction> transactionList = [
   PayTransaction(

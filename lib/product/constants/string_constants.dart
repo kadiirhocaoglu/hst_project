@@ -47,6 +47,18 @@ class StringConstants {
   static const String navSettings = 'Ayarlar';
   static const String typeMoney = 'TL';
   static const String payment = 'Satış Yap';
+  ///Payment
+  static const String salesContunie = 'Devam Et';
+  static const String sales = 'Satış';
+  static const String payWithCard = 'Kart ile Ödeme';
+  static const String payWithLink = 'Link ile Ödeme';
+  static const String payWithQR = 'QR ile Ödeme';
+  static const String payWithContactless = 'Temassız Ödeme';
+  static const String payWithCardSubtitle = 'Kart ile Ödeme - Kredi veya banka kartı kullanarak ödeme yapabilirsiniz.';
+  static const String payWithLinkSubtitle = 'Link ile Ödeme - Ödeme linki aracılığıyla işlem yapabilirsiniz.';
+  static const String payWithQRSubtitle = 'QR ile Ödeme - QR kodu tarayarak ödeme gerçekleştirebilirsiniz.';
+  static const String payWithContactlessSubtitle = 'Temassız Ödeme - NFC teknolojisi ile temassız ödeme yapabilirsiniz.';
+
 
 }
 

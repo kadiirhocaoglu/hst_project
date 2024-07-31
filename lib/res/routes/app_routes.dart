@@ -9,6 +9,7 @@ import 'package:hst_project/view/notifications/notificaitons_view.dart';
 import 'package:hst_project/view/payment/pay_card/pay_card_view.dart';
 import 'package:hst_project/view/payment/pay_contactless/pay_contactless_view.dart';
 import 'package:hst_project/view/payment/pay_link/pay_link_view.dart';
+import 'package:hst_project/view/payment/sales/payment/payment_view.dart';
 import 'package:hst_project/view/payment/sales/sales_view.dart';
 import 'package:hst_project/view/register/register_view.dart';
 import 'package:hst_project/view/settings/settings_view.dart';
@@ -112,5 +113,12 @@ class AppRoutes {
       transitionDuration: Duration(milliseconds: 250),
       transition: Transition.rightToLeftWithFade,
     ),
+    GetPage(
+      name: RoutesConstants.paymentView,
+      page: () => PaymentView(),
+      transitionDuration: Duration(milliseconds: 250),
+      transition: Transition.rightToLeftWithFade,
+    ),
+    
   ];
 }

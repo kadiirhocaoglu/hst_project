@@ -3,7 +3,7 @@ class RoutesConstants {
   
   //Start
   static const String splashScreen = '/splash' ;
-  static const String dashboardView = '/dashboard_view'; 
+  static const String dashboardView = '/'; 
   //Auth
   static const String authMainView = '/auth_main_view';
   static const String loginView = '/login_view' ;
@@ -16,6 +16,7 @@ class RoutesConstants {
   static const String actionMenuView = '/action_menu_view';
   static const String notificaitonsView =  '/notifications_view';
   //Payment
+  static const String paymentView = '/payment_view';
   static const String getMoneyView = '/get_money_view';
   static const String salesView = '/sales_view';
   static const String payCardView = '/pay_card_view';

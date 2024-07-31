@@ -42,7 +42,7 @@ class CustomBoxDecorationItems {
   static BoxDecoration getCardUpperDecoration(){ 
     return BoxDecoration(
       image: DecorationImage(
-        image: AssetImage(ImageConstants.card_bg.toPng),         alignment: Alignment.topCenter, 
+        image: AssetImage(ImageConstants.card_bg.toPng), alignment: Alignment.topCenter, 
         fit: BoxFit.fitWidth, 
        colorFilter: ColorFilter.mode(
           Colors.white.withOpacity(0.4),
@@ -93,13 +93,14 @@ static BorderRadius getCardUpperRadius(){
   }
 
   static TextStyle getTitleLogoStyle(
-      {FontWeight fontWeight = FontWeight.w100}) {
+      {FontWeight fontWeight = FontWeight.w100, Color color = ColorConstants.zambak}) {
     return TextStyle(
-      color: ColorConstants.zambak,
+      color: color,
       fontWeight: fontWeight,
       fontSize: CustomSizeConstants.titleLogoSize.value,
     );
   }
+  
     static TextStyle getNormalButtonTextStyle(
       {FontWeight fontWeight = FontWeight.w100}) {
     return TextStyle(

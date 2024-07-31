@@ -5,6 +5,7 @@ import 'package:hst_project/product/enums/custom_size_constants.dart';
 import 'package:hst_project/product/widget/appbar/custom_app_bar.dart';
 import 'package:hst_project/product/widget/appbar/custom_home_title_view.dart';
 import 'package:hst_project/view/home/widgets/home_action_pay_button.dart';
+import 'package:hst_project/view/home/widgets/home_hello_title_widget.dart';
 import 'package:hst_project/view/home/widgets/home_upper_credit_card_widget.dart';
 import 'package:hst_project/view/home/widgets/home_bottom_credit_card_widget.dart';
 import 'package:hst_project/product/widget/decorations/custom_box_decoration_items.dart';
@@ -29,16 +30,18 @@ class HomeView extends GetView<HomeController> {
             children: [
               CustomHomeTitleView(),
               CreditCardUpper(),
-              Expanded( 
-                child: Container(
-                  color: ColorConstants.bgColor,
-                child: Column(
-                  children: [
-                    CreditCardBottom(),
-                    HomeActionPayButton(), 
-                    TransactionList() 
-                  ],
-                )),
+              Container(
+                child: Expanded( 
+                  child: Container(
+                    color: ColorConstants.bgColor,
+                  child: Column(
+                    children: [
+                      CreditCardBottom(),
+                      HomeActionPayButton(), 
+                      TransactionList() 
+                    ],
+                  )),
+                ),
               ),
             ],
           ),
@@ -47,4 +50,3 @@ class HomeView extends GetView<HomeController> {
     );
   }
 }
-

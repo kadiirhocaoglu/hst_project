@@ -35,6 +35,8 @@ enum CustomSizeConstants {
   
   homeCardLogoHeight(9.0),
 
+  salesContinueButtonWidth(65.0),
+
   ///HomeCard BalanceFontSize [value]
   homeCardBalancesFontSize(20.0),
 

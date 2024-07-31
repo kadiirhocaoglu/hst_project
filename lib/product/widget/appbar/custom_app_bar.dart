@@ -43,4 +43,27 @@ class CustomAppBar {
       ]
     );
   }
+    static AppBar getSalesCustomAppBar(String title) {
+    return AppBar(
+      foregroundColor: ColorConstants.zambak,
+      toolbarHeight: 10.0.hp,
+      leading: BackButton(color: ColorConstants.bgColor,),
+      systemOverlayStyle: SystemUiOverlayStyle.light,
+      automaticallyImplyLeading: false,
+      shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.only(
+              bottomLeft: CustomSizeConstants.medium.radiusCircular,
+              bottomRight: CustomSizeConstants.medium.radiusCircular)),
+      flexibleSpace: Container(
+        decoration: BoxDecoration(
+          gradient: CustomBoxDecorationItems.getLinearGradient(),
+          borderRadius: BorderRadius.only(
+              bottomLeft: CustomSizeConstants.medium.radiusCircular,
+              bottomRight: CustomSizeConstants.medium.radiusCircular),
+        ),
+      ),
+      title: Text(title, style: TextStyle(color: ColorConstants.zambak, fontSize: 22.0.sp, fontWeight: FontWeight.w400),),
+      
+    );
+  }
 }
