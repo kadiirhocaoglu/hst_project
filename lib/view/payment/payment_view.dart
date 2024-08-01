@@ -10,7 +10,7 @@ import 'package:hst_project/product/widget/decorations/custom_box_decoration_ite
 import 'package:hst_project/product/widget/decorations/icon_logo_image.dart';
 import 'package:hst_project/utils/extensions/double_extension.dart';
 import 'package:hst_project/view/payment/widget/payments_button_widget.dart';
-import 'package:hst_project/view_models/controllers/payment/sales/payment/payment_view_model.dart';
+import 'package:hst_project/view_models/controllers/payment/payment_view_model.dart';
 
 class PaymentView extends GetView<PaymentController>{
   final controller = Get.put(PaymentController());
@@ -18,7 +18,7 @@ class PaymentView extends GetView<PaymentController>{
   Widget build(BuildContext context) {
      controller.receivedValue = Get.arguments;
     return Scaffold(
-      appBar:CustomAppBar.getSalesCustomAppBar("Ödeme Seç"),
+      appBar:CustomAppBar.getSalesCustomAppBar(StringConstants.choseePay),
       body: SafeArea(
         child: Container(
           padding: CustomSizeConstants.low.padding,

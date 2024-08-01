@@ -11,7 +11,7 @@ class PayCardHolderPhoneInput extends GetView<PayCardController>{
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(StringConstants.cardHolderMail),
+        Text(StringConstants.cardHolderNumber),
         TextFormField(
           //controller: controller.phoneNumberController.value,
           //focusNode: controller.phoneNumberFocusNode.value,

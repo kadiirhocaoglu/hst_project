@@ -68,6 +68,7 @@ class StringConstants {
   static const String cardHolderMail = 'Kart Sahibinin Mail Adresi';
   static const String cardHolderNumber = 'Kart Sahibinin Numarası';
   static const String safetyPayTitle = 'Güvenli Ödeme';
+  static const String choseePay = 'Ödeme Seç';  
 
 }
 

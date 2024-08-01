@@ -17,6 +17,7 @@ class RoutesConstants {
   static const String notificaitonsView =  '/notifications_view';
   //Payment
   static const String paymentView = '/payment_view';
+  static const String payQRView='/pay_qr_view';
   static const String getMoneyView = '/get_money_view';
   static const String salesView = '/sales_view';
   static const String payCardView = '/pay_card_view';

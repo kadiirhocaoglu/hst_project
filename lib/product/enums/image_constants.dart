@@ -5,7 +5,9 @@ enum IconConstants {
   hst_assistant('ic_assistant'),
   card_chip('ic_credit_card_chip'),
   wifi('ic_wifi'),
-  cretid_card('ic_credit_card')
+  cretid_card('ic_credit_card'),
+  qr_code('ic_qr_code'),
+  contactless('ic_contactless')
   ;
   
   final String value; 

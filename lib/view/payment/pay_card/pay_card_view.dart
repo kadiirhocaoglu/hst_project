@@ -6,13 +6,13 @@ import 'package:hst_project/product/widget/appbar/custom_app_bar.dart';
 import 'package:hst_project/view/payment/pay_card/widget/pay_card_details_input_widget.dart';
 import 'package:hst_project/view/payment/pay_card/widget/pay_card_drop_down_menu_widget.dart';
 import 'package:hst_project/view/payment/pay_card/widget/pay_card_holder_details_input_widget.dart';
+import 'package:hst_project/view/payment/pay_card/widget/pay_card_installment_drop_down_menu.dart';
 import 'package:hst_project/view/payment/pay_card/widget/pay_card_safety_pay_button.dart';
 import 'package:hst_project/view/payment/widget/payment_amount_preview_label.dart';
 import 'package:hst_project/view_models/controllers/payment/pay_card/pay_card_view_model.dart';
 
 class PayCardView extends GetView<PayCardController> {
   final controller = Get.put(PayCardController());
- 
 
   @override
   Widget build(BuildContext context) {
@@ -27,10 +27,10 @@ class PayCardView extends GetView<PayCardController> {
             onChanged: controller.onFormChange,
             child: Column(
               children: [
-                PaymentAmountPreviewLabel(value: controller.receivedValue.toString() ?? "" ),
-                PayCardDropDownMenuWidget(),
+              PaymentAmountPreviewLabel(value: controller.receivedValue.toString() ?? "Null" ),                PayCardDropDownMenuWidget(),
                 PayCardDetailsInputWidget(),
                 PayCardHolderDetailsInputWidget(),
+                PayCardInstallmentDropDownMenu(),
                 PayCardSafetyPayButton()
                 
               ],

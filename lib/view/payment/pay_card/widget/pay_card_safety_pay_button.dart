@@ -6,7 +6,7 @@ import 'package:hst_project/view_models/controllers/payment/pay_card/pay_card_vi
 class PayCardSafetyPayButton extends GetView<PayCardController>{
   @override
   Widget build(BuildContext context) {
-  return PaymentSafetyPayButton(onPressed: (){},);
+  return PaymentSafetyPayButton(onPressed: controller.paymentSafetyPayButtonOnPressed,);
   }
   
 }

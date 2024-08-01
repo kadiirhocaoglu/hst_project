@@ -39,8 +39,8 @@ class HstApp extends StatelessWidget {
       , surface: ColorConstants.bgColor, onSurface: ColorConstants.onSurface)),
       initialRoute: RoutesConstants.dashboardView,
       getPages: AppRoutes.appRoutes(),
-      home: DashboardView(),
-      initialBinding: DashboardBinding(),
+      home: HomeView(),
+      initialBinding: HomeBinding(),
     );
   }
 }

@@ -12,7 +12,7 @@ class PayCardDropDownMenuWidget extends GetView<PayCardController> {
       color: ColorConstants.white100,
       child: Container(
         width: double.infinity,
-        padding: CustomSizeConstants.low.padding,
+        padding: CustomSizeConstants.low.paddingHorizontal,
         child: Obx(() => DropdownButtonHideUnderline(
           child: DropdownButton<String>(
             isDense: false,

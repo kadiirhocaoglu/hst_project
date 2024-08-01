@@ -11,7 +11,15 @@ class PayCardController extends GetxController {
   }
    
   Rx<String?> selectedCardType = Rx<String?>(null);
+RxString selectedInstallment = "Tek Çekim".obs;
+  
 
+  void paymentSafetyPayButtonOnPressed() {}
+  void installmentOnChanged(String? newValue) {
+    if (newValue != null) {
+      selectedInstallment.value = newValue;
+    }
+  }
 
   void cardTypeOnChange(String? newValue) {
     selectedCardType.value = newValue;

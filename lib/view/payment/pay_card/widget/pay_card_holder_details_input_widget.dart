@@ -10,7 +10,6 @@ class PayCardHolderDetailsInputWidget extends GetView<PayCardController> {
   @override
   Widget build(BuildContext context) {
     return Card(
-      margin: CustomSizeConstants.verylow.marginVertical + EdgeInsets.only(bottom: CustomSizeConstants.low.value),
       color: ColorConstants.white100,
       child:Padding(padding: CustomSizeConstants.low.padding,
       child: Column(children: [

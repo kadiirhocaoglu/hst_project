@@ -9,6 +9,7 @@ import 'package:hst_project/view/notifications/notificaitons_view.dart';
 import 'package:hst_project/view/payment/pay_card/pay_card_view.dart';
 import 'package:hst_project/view/payment/pay_contactless/pay_contactless_view.dart';
 import 'package:hst_project/view/payment/pay_link/pay_link_view.dart';
+import 'package:hst_project/view/payment/pay_qr/pay_qr_view.dart';
 import 'package:hst_project/view/payment/payment_view.dart';
 import 'package:hst_project/view/sales/sales_view.dart';
 import 'package:hst_project/view/register/register_view.dart';
@@ -20,6 +21,7 @@ import 'package:hst_project/view_models/bindings/get_money_binding.dart';
 import 'package:hst_project/view_models/bindings/home_binding.dart';
 import 'package:hst_project/view_models/bindings/sales_binding.dart';
 import 'package:hst_project/view_models/bindings/settings_binding.dart';
+import 'package:hst_project/view_models/controllers/payment/pay_qr/pay_qr_view_model.dart';
 
 class AppRoutes {
   
@@ -116,6 +118,12 @@ class AppRoutes {
     GetPage(
       name: RoutesConstants.paymentView,
       page: () => PaymentView(),
+      transitionDuration: Duration(milliseconds: 250),
+      transition: Transition.rightToLeftWithFade,
+    ),
+    GetPage(
+      name: RoutesConstants.payQRView,
+      page: () => PayQRView(),
       transitionDuration: Duration(milliseconds: 250),
       transition: Transition.rightToLeftWithFade,
     ),

@@ -10,7 +10,7 @@ import 'package:hst_project/view/sales/widget/sales_appbar_widget.dart';
 import 'package:hst_project/view/sales/widget/sales_bottom_card_container_widget.dart';
 import 'package:hst_project/view/sales/widget/sales_continue_button_widget.dart';
 import 'package:hst_project/view/sales/widget/sales_numeric_keyboard.dart';
-import 'package:hst_project/view_models/controllers/payment/sales/sales_view_model.dart';
+import 'package:hst_project/view_models/controllers/sales/sales_view_model.dart';
 
 class SalesView extends GetView<SalesController> {
 

@@ -4,7 +4,7 @@ import 'package:hst_project/product/constants/color_constants.dart';
 import 'package:hst_project/product/enums/custom_size_constants.dart';
 import 'package:hst_project/product/widget/decorations/custom_box_decoration_items.dart';
 import 'package:hst_project/utils/extensions/double_extension.dart';
-import 'package:hst_project/view_models/controllers/payment/sales/sales_view_model.dart';
+import 'package:hst_project/view_models/controllers/sales/sales_view_model.dart';
 
 class SalesAmountInputWidget extends GetView<SalesController> {
   @override
