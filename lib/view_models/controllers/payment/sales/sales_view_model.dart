@@ -6,6 +6,7 @@ class SalesController extends GetxController {
   final title = RoutesConstants.salesView.obs;
   var input = ''.obs;
   var fractional = ''.obs;
+  final double value = 10.0;
   void onKeyTap(String value) {
     if (value == ',') {
       if (!input.value.contains(',')) {
@@ -28,6 +29,10 @@ class SalesController extends GetxController {
     }
   }
   void salesContinueButtonOnPressed(){
-    Get.toNamed(RoutesConstants.paymentView);
+    if (double != null){
+      
+      Get.toNamed(RoutesConstants.paymentView, arguments: {'value': value});
+
+    }
   }
   }

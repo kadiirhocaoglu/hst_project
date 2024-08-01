@@ -60,6 +60,15 @@ class StringConstants {
   static const String payWithContactlessSubtitle = 'Temassız Ödeme - NFC teknolojisi ile temassız ödeme yapabilirsiniz.';
 
 
+  ///PayWithCard
+  static const String cardNumber = 'Kart Numarası';
+  static const String cardExpirationDate = 'Son Kullanma Tarihi';
+  static const String cardCVV = 'CVV';
+  static const String cardHolderName = 'Kart Sahibinin Adı';
+  static const String cardHolderMail = 'Kart Sahibinin Mail Adresi';
+  static const String cardHolderNumber = 'Kart Sahibinin Numarası';
+  static const String safetyPayTitle = 'Güvenli Ödeme';
+
 }
 
 extension StringConstantsExt on StringConstants{

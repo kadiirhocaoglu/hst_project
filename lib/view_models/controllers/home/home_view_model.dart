@@ -6,7 +6,7 @@ import 'package:hst_project/view/home/widgets/transaction_list.dart';
 import 'package:hst_project/res/routes/routes_constants.dart';
 import 'package:hst_project/view/action_menu/action_menu_view.dart';
 import 'package:hst_project/view/get_money/get_money_view.dart';
-import 'package:hst_project/view/payment/sales/sales_view.dart';
+import 'package:hst_project/view/sales/sales_view.dart';
 import 'package:hst_project/view/settings/settings_view.dart';
 import 'package:hst_project/view_models/bindings/action_menu_binding.dart';
 import 'package:hst_project/view_models/bindings/get_money_binding.dart';
