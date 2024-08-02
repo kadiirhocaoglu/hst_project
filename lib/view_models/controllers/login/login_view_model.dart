@@ -25,7 +25,7 @@ class LoginController extends GetxController {
       // başarılı login simülasyonu
       //TODO: print(Get.size.width);
       Get.snackbar('HST POS', 'Giriş başarılı, hoşgeldin.');
-      Get.offNamed(RoutesConstants.homeView);
+      Get.offNamed(RoutesConstants.dashboardView);
     } else {
       Get.snackbar('HST POS', 'Lütfen bilgileri doğru girdiğinizden emin olun.');
     }

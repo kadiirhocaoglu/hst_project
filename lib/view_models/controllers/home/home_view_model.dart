@@ -18,7 +18,12 @@ class HomeController extends GetxController {
 void actionPayButtonOnTapped(){
   Get.toNamed(RoutesConstants.salesView);
 }
-
+void assistantOnPressed(){
+  Get.toNamed(RoutesConstants.assistantView);
+}
+void notificationsOnPressed(){
+  Get.toNamed(RoutesConstants.notificaitonsView);
+}
 final List<PayTransaction> transactionList = [
   PayTransaction(
     transactionId: 'txn_001',

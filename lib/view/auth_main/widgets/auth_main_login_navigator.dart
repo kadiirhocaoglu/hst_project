@@ -8,7 +8,7 @@ import 'package:hst_project/view_models/controllers/auth_main/auth_main_view_mod
 
 class AuthMainLoginNavigator extends GetView<AuthMainController> {
   AuthMainLoginNavigator({super.key});
-
+  
   @override
   Widget build(BuildContext context) {
     return Container(

@@ -37,10 +37,10 @@ class HstApp extends StatelessWidget {
       //fallbackLocale: const Locale('en' ,'US'),
       theme: ThemeData(colorScheme: ColorScheme(brightness: Brightness.light, primary: ColorConstants.darkness, onPrimary: ColorConstants.zambak, secondary: ColorConstants.secondary, onSecondary: ColorConstants.cardGradientColor, error: ColorConstants.error, onError: ColorConstants.gradientEndColor
       , surface: ColorConstants.bgColor, onSurface: ColorConstants.onSurface)),
-      initialRoute: RoutesConstants.dashboardView,
+      initialRoute: RoutesConstants.authMainView,
       getPages: AppRoutes.appRoutes(),
       home: DashboardView(),
-      initialBinding: DashboardBinding(),
+      initialBinding: AuthMainBinding(),
     );
   }
 }
