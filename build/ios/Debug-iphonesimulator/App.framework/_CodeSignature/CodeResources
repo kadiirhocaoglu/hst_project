@@ -10,11 +10,11 @@
 		</data>
 		<key>flutter_assets/AssetManifest.bin</key>
 		<data>
-		nyJH/1gAOzHiWBr/kURmq/E0VgA=
+		Qw/55FA7mVJ+HDgrpZ6TkXQWi6M=
 		</data>
 		<key>flutter_assets/AssetManifest.json</key>
 		<data>
-		jJwp6eifu6w8wPTEV7x2kZl+OSo=
+		jhL1lpKcuttYV3ao6nnCNLA8tFs=
 		</data>
 		<key>flutter_assets/FontManifest.json</key>
 		<data>
@@ -27,6 +27,10 @@
 		<key>flutter_assets/assets/icon/ic_assistant.png</key>
 		<data>
 		QnIpzG00LqJ0Phy/mlmi0rP5RA0=
+		</data>
+		<key>flutter_assets/assets/icon/ic_contactless.png</key>
+		<data>
+		UuByFEa2JG07GmmYYN0ND4cF9VU=
 		</data>
 		<key>flutter_assets/assets/icon/ic_credit_card.png</key>
 		<data>
@@ -43,6 +47,10 @@
 		<key>flutter_assets/assets/icon/ic_phone.png</key>
 		<data>
 		1gDnw2YJkMIDXh5IfLMnqpKuZBs=
+		</data>
+		<key>flutter_assets/assets/icon/ic_qr_code.png</key>
+		<data>
+		AuJ4aAJJPx6uHY/wvKYLqiBKzQw=
 		</data>
 		<key>flutter_assets/assets/icon/ic_wifi.png</key>
 		<data>
@@ -66,7 +74,7 @@
 		</data>
 		<key>flutter_assets/kernel_blob.bin</key>
 		<data>
-		vlZfOIwiQXMEp3JroGbiAQ2m3xI=
+		r2gKCK28ngpSvOpmhZz4zW3gcHY=
 		</data>
 		<key>flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
 		<data>
@@ -99,14 +107,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			kwM0VJbgpeVV5sW23XwmUE3QEVlZytHnn2kQhIwo0YA=
+			K20jnQ07YtMx6MFHhrKtB9t4/8yH+P6MUqyPgD6oG9Q=
 			</data>
 		</dict>
 		<key>flutter_assets/AssetManifest.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			lrQJlktS4RW1WXIW/yoQYwJ6k5Unpo/G0wQZJoonOw8=
+			yXDzi7CQ7aBhu+xKqAbX7FLu2wnZ2+OgZFtK6rxEXbY=
 			</data>
 		</dict>
 		<key>flutter_assets/FontManifest.json</key>
@@ -128,6 +136,13 @@
 			<key>hash2</key>
 			<data>
 			ZkxRnFMvUqSz2uuc60QyzneW3mrTagA4B9eVwNlxsbo=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/icon/ic_contactless.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			LbMcmKtxPg+pmPcNPiqXzOF+pC10sBdOgbdAptyH+/A=
 			</data>
 		</dict>
 		<key>flutter_assets/assets/icon/ic_credit_card.png</key>
@@ -156,6 +171,13 @@
 			<key>hash2</key>
 			<data>
 			zaMgX20TdU2RbQf/DnhCRSCHOUHKs8Hpwovr9n/gZEk=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/icon/ic_qr_code.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			T7Ng0Gl7WJmuetqJqSC8kyRmUmA+F6n3M8aVJXYXG9M=
 			</data>
 		</dict>
 		<key>flutter_assets/assets/icon/ic_wifi.png</key>
@@ -197,7 +219,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/rpLrFoBpD3Vgnddh22Z1fv9U+UjVAXlmsjPScgip0U=
+			e8fHRXX3AGtwQbHeYUK6GbtSLsDZVtc7ja84No+pPfw=
 			</data>
 		</dict>
 		<key>flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>

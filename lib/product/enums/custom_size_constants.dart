@@ -31,7 +31,7 @@ enum CustomSizeConstants {
   ///HomeCard  bottom height [value]
   homeCardBottomHeight(7.0),
   ///HomeCard Upper width [value]
-  homeCardWidth(85.0),
+  homeCardWidth(89.0),
   
   homeCardLogoHeight(9.0),
 
