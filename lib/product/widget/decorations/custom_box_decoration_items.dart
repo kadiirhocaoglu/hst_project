@@ -9,11 +9,19 @@ class CustomBoxDecorationItems {
   static LinearGradient getLinearGradient() {
     return const LinearGradient(
       colors: [
-        ColorConstants.gradientStartColor,
-        ColorConstants.logoDarkGreen,
-        //ColorConstants.logoLightGreen,
-       // ColorConstants.logoDarkBlue,
-      //  ColorConstants.logoLightBlue,
+        //  ColorConstants.gradientStartColor,
+         ColorConstants.gradientStartColor,
+        //   ColorConstants.cardGradientColor,
+        //  ColorConstants.logoDarkGreen,
+         ColorConstants.logoDarkGreen,
+
+        // ColorConstants.logoLightGreen,
+        // // ColorConstants.logoDarkBlue,
+        // // ColorConstants.logoDarkBlue
+        // ColorConstants.logoLightBlue,
+      //Color.fromRGBO(16, 35, 31, 1),
+      //  Color.fromRGBO(16, 35, 31, 1),
+     // Color.fromARGB(255,0, 122, 255),
       ],
     );
   }

@@ -65,5 +65,19 @@ class CustomAppBar {
       title: Text(title, style: TextStyle(color: ColorConstants.zambak, fontSize: 22.0.sp, fontWeight: FontWeight.w400),),
       
     );
+    }
+    static AppBar getMenuTitle(String title) { 
+      return AppBar(
+        toolbarHeight: 9.0.hp,
+        title: Text(title, style: CustomBoxDecorationItems.getMenuTitleTextStyle()),
+        flexibleSpace: Container(
+        decoration: BoxDecoration(
+          gradient: CustomBoxDecorationItems.getLinearGradient(),
+          borderRadius: BorderRadius.only(
+              bottomLeft: CustomSizeConstants.medium.radiusCircular,
+              bottomRight: CustomSizeConstants.medium.radiusCircular),
+        ),
+      ));
   }
-}
+  }
+
